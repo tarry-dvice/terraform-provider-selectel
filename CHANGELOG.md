@@ -1,3 +1,10 @@
+## 8.7.0 (October 7, 2026)
+
+FEATURES:
+
+* Add `roles` argument to `selectel_dbaas_user_v1` resource ([#434](https://github.com/selectel/terraform-provider-selectel/pull/434))
+* Add new data sources ([#434](https://github.com/selectel/terraform-provider-selectel/pull/434)): `selectel_dbaas_roles_v1`
+
 ## 8.6.0 (October 2, 2026)
 
 FEATURES:
