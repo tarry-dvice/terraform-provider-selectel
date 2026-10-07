@@ -4,21 +4,15 @@ description: |-
   Provides a list of user roles available in Selectel Managed Databases.
 ---
 
+{{/* This template serves as a starting point for documentation generation */ -}}
+
 # selectel\_dbaas\_roles\_v1
 
 Provides a list of user roles available in Managed Databases. For more information about managing users and roles in Managed Databases, see the official Selectel documentation for [PostgreSQL](https://docs.selectel.ru/en/managed-databases/postgresql/manage-users/), [PostgreSQL for 1C](https://docs.selectel.ru/en/managed-databases/postgresql-for-1c/manage-users-1c/), [PostgreSQL TimescaleDB](https://docs.selectel.ru/en/managed-databases/timescaledb/manage-users/), [PostgreSQL PGVector](https://docs.selectel.ru/en/managed-databases/pgvector/manage-users/).
 
 ## Example Usage
 
-```terraform
-data "selectel_dbaas_roles_v1" "roles" {
-  project_id = selectel_vpc_project_v2.project_1.id
-  region     = "ru-3"
-  filter {
-    datastore_type_id = data.selectel_dbaas_datastore_type_v1.datastore_type_1.datastore_types[0].id
-  }
-}
-```
+{{tffile "examples/data-sources/dbaas_roles_v1/example_1.tf"}}
 
 ## Argument Reference
 
